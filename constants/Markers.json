@@ -1,0 +1,64 @@
+{
+    "foodBanks": [
+      {
+        "name": "UAE Food Bank, Al Quoz",
+        "latitude": 25.14390729322566,
+        "longitude": 55.25683702698511
+      },
+      {
+        "name": "UAE Food Bank, Muhaisnah 2",
+        "latitude": 25.2626529797825,
+        "longitude": 55.429998513492556
+      },
+      {
+        "name": "UAE Food Bank, Jabal Ali",
+        "latitude": 24.999892609425576,
+        "longitude": 55.1225436251344
+      },
+      {
+        "name": "Gold Rose",
+        "latitude": 25.204839,
+        "longitude": 55.270812
+        
+      },
+      {
+        "name": "UAE Food Bank",
+        "latitude": 25.207345,
+        "longitude":  55.269369
+        
+      },
+      {
+        "name": "Free Food Fridge",
+        "latitude": 25.041045,
+        "longitude": 55.140986
+        
+      }
+
+      
+      
+      
+    ],
+    "charitableOrganizations": [
+      {
+        "name": "Emirates Red Crescent",
+        "latitude": 25.430455431095854,
+        "longitude": 55.49158302727183
+      },
+      {
+        "name": "مؤسسة حميد بن راشد النعيمي الخيرية",
+        "latitude": 25.235688381746336,
+        "longitude": 55.35347177078253
+      },
+      {
+        "name": "Saud Bin Rashid Al Mualla Charitable and Humanitarian Est",
+        "latitude": 25.523923926486273,
+        "longitude": 55.553297271164176
+      },
+      {
+        "name": "Ramadan Sharing Fridge",
+        "latitude": 25.231518924846302,
+        "longitude": 55.27112848625879
+      }
+    ]
+  }
+  
