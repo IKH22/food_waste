@@ -1,4 +1,31 @@
 import FontAwesome from "@expo/vector-icons/FontAwesome";
+import { Notifications } from 'expo';
+import * as Permissions from 'expo-permissions';
+
+// Request push notification permissions
+const registerForPushNotificationsAsync = async () => {
+  const { status: existingStatus } = await Permissions.getAsync(Permissions.NOTIFICATIONS);
+  let finalStatus = existingStatus;
+
+  if (existingStatus !== 'granted') {
+    const { status } = await Permissions.askAsync(Permissions.NOTIFICATIONS);
+    finalStatus = status;
+  }
+
+  if (finalStatus !== 'granted') {
+    console.log('Permission to receive push notifications was denied');
+    return;
+  }
+
+  // Get the token that uniquely identifies this device
+  let token = await Notifications.getExpoPushTokenAsync();
+  console.log(token);
+  // Send the token to your server
+};
+
+// Call the function to request push notification permissions
+registerForPushNotificationsAsync();
+
 import {
   DarkTheme,
   DefaultTheme,
@@ -62,3 +89,4 @@ function RootLayoutNav() {
     </ThemeProvider>
   );
 }
+
